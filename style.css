@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.loader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.loader div{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: load 0.8s ease infinite;
+}
+.loader .one{
+    animation-delay: 0.3s;
+}
+.loader .two{
+    animation-delay: 0.4s;
+}
+.loader .three{
+    animation-delay: 0.5s;
+}
+@keyframes load{
+    0%{
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+        border: 10px solid blueviolet;
+    }
+}
